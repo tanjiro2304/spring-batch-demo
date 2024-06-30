@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_learning
+    username: postgres
+    password: TIGER
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+    logging:
+      level:
+        org:
+          hibernate:
+            SQL: DEBUG
+            type: trace
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  # You can configure the database connection pool properties here (optional)
+
+
+
+# Additional configuration (optional)
