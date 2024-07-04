@@ -16,6 +16,11 @@ spring:
           hibernate:
             SQL: DEBUG
             type: trace
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
   jpa:
     hibernate:
       ddl-auto: update
@@ -23,8 +28,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-  # You can configure the database connection pool properties here (optional)
-
-
-
-# Additional configuration (optional)
