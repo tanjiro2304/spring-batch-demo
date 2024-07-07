@@ -1,6 +1,6 @@
-package com.adhyayan.service.config;
+package com.example.service.config;
 
-import com.adhyayan.service.models.Organization;
+import com.example.service.models.Organization;
 import org.springframework.batch.item.ItemProcessor;
 
 public class OrganizationProcessor implements ItemProcessor<Organization, Organization> {

@@ -1,6 +1,6 @@
-package com.adhyayan.service.repo;
+package com.example.service.repo;
 
-import com.adhyayan.service.models.Organization;
+import com.example.service.models.Organization;
 import jakarta.annotation.Resource;
 import org.springframework.data.jpa.repository.JpaRepository;
 
